@@ -8,11 +8,9 @@ Superhero costume designer where the user gets to choose from costume items and 
     - information about each user
     - cover in term 2?
 - Costume
-    - head_gear
+    - head_wear
     - foot_wear
     - suit
-    - skity
-    - pants
     - leg_wear
     - torso
     - hand_wear

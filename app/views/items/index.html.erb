@@ -1,0 +1,23 @@
+<div class="container" id="main-div">
+    <h1 class="text-center display-4">Items</h1>
+
+    <div class="row">
+        <p class="col-sm-6"><a class="btn btn-primary" href="<%= root_path %>">Back</a></p>
+        <p class="col-sm-6 text-right"><a class="btn btn-primary" href="<%= items_new_path %>">New Item</a></p>
+    </div>
+
+    <div class="row">
+        <% @items.each do |item|%>
+            <div class="col-sm-2">
+                <h4><%= item.label%></h4>
+                <em><%= item.item_type.label %><br/>
+                <%= item.description %></em>
+                <p>$<%= item.price %></p>
+                <p><a href="/items/<%= item.id %>" class="btn btn-secondary">View Item</a></p>
+            </div>
+        <% end %>
+    </div>
+</div>
+
+
+

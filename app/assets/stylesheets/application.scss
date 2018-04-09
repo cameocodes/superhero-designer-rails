@@ -1,0 +1,33 @@
+
+ @import "bootstrap";
+
+ html {
+     height: 100%;
+ }
+ 
+body {
+    background-image: image-url("homepage_background.jpg") !important;
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 85%;
+}
+
+.title-container {
+    height: 100%;
+    padding-top: 8%;
+}
+
+.jumbotron {
+     background: rgba($color: #FFFFFF, $alpha: 0.8);
+     border-radius: 10px;
+     height: inherit;
+ }
+
+ #main-title {
+     padding-bottom: 10%;
+ }
+
+ #main-div {
+     background-color: lightgrey;
+     height: inherit;
+ }

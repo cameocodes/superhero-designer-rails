@@ -1,0 +1,29 @@
+<div class="container" id="main-div">
+    <h1 class="text-center display-4">Edit <%=@item.label%></h1>
+
+    <div class="text-center">
+        <%= form_with model: @items, method: "patch" do |form| %>
+            <p>
+                <%= form.label :label %>:<br />
+                <%= form.text_field :label, value: @item.label %>
+            </p>
+
+            <p>
+                <%= form.label :description %>:<br />
+                <%= form.text_area :description, value: @item.description %>
+            </p>
+
+            <p>
+                <%= form.label :price %>:<br />
+                <%= form.number_field :price, :step => 0.01, value: @item.price%>
+            </p>
+
+            <p>
+                <%= form.label :item_type_id %>:<br/>
+                <%= form.collection_select(:item_type_id, @item_types, :id, :label, selected: @item.item_type_id) %>
+            </p>
+
+            <%= form.submit %>
+        <% end %>
+    </div>
+</div>
