@@ -4,7 +4,7 @@
     <div class="row">
         <p class="col-sm-4 text-left"><a class="btn btn-primary" href="<%= items_path %>">Back</a></p>
         <p class="col-sm-4 text-center"><a class="btn btn-primary" href="/items/<%= @item.id %>/edit">Edit Item</a></p>
-        <p class="col-sm-4 text-right"><a class="btn btn-primary" href="/items/<%= @item.id %>/edit">Delete Item</a></p>
+        <p class="col-sm-4 text-right"><a class="btn btn-primary" href="/items/<%= @item.id %>" data-method="delete">Delete Item</a></p>
         
     </div>
 

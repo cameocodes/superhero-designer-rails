@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get '/items/:id', to: 'items#show'
   get '/items/:id/edit', to: 'items#edit'
   patch '/items/:id/edit', to: 'items#update'
+  delete '/items/:id', to: 'items#destroy'
 
 end
 

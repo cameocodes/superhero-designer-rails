@@ -8,10 +8,10 @@
 
     <div class="row">
         <% @items.each do |item|%>
-            <div class="col-sm-2">
-                <h4><%= item.label%></h4>
-                <em><%= item.item_type.label %><br/>
-                <%= item.description %></em>
+            <div class="col-sm-3 text-center">
+                <h3><%= item.label%></h3>
+                <p><%= item.description %></p>
+                <em><%= item.item_type.label %></em>
                 <p>$<%= item.price %></p>
                 <p><a href="/items/<%= item.id %>" class="btn btn-secondary">View Item</a></p>
             </div>
