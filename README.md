@@ -1,7 +1,5 @@
 # README
 
-[https://superhero-designer.netlify.com](https://superhero-designer.netlify.com)
-
 ## Superhero Designer
 Superhero costume designer where the user gets to choose from costume items and construct their own costume.
 
